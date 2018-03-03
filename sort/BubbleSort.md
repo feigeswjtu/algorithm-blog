@@ -10,11 +10,11 @@
 
 冒泡排序的原理图:
 
-![冒泡排序原理图](./assets/images/bubbleSort.png)
+![冒泡排序原理图](../assets/images/bubbleSort.png)
 
 动态图:
 
-![冒泡排序动态图](./assets/images/BubbleAnimation.gif)
+![冒泡排序动态图](../assets/images/BubbleAnimation.gif)
 
 # 算法实现
 下面是冒泡循环的简单代码实现。
@@ -53,7 +53,7 @@ public class BubbleFlagSort implements ISort{
     public int[] sort(int[] data) {
         //设置一个标志
         boolean flag = true;
-        for (int i = 1; i < data.length && flag; i++){
+        for (int i = 1; i < data.length; i++){
             //每次循环都初始化为true
             flag = true;
             for (int j = 0; j < data.length - i - 1; j++){
@@ -79,14 +79,14 @@ public class BubbleFlagSort implements ISort{
 
 
 ```java
-public class BubbleFlagSort implements ISort{
+public class BubbleFlagExchangedSort implements ISort{
     @Override
     public int[] sort(int[] data) {
         //设置一个标志
         boolean flag = true;
         int k = data.length - 2;
         int lastExchange = 0;
-        for (int i = 1; i < data.length && flag; i++){
+        for (int i = 1; i < data.length; i++){
             //每次循环都初始化为true
             flag = true;
             //只循环到最后交换的位置

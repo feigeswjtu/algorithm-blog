@@ -2,4 +2,5 @@
 
 * [序言](README.md)
 * [排序](sort.md)
-  * [冒泡排序](BubbleSort.md)
+  * [冒泡排序](sort/BubbleSort.md)
+  * [选择排序](sort/SelectionSort.md)
